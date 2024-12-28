@@ -5,15 +5,15 @@ export default function Navbar(): ReactElement {
   return (
     <>
       <nav className="NavigationBar">
-        <ul>
+        <ul className="linkList">
           <li>
-            <a href="/">Home</a>
+            <a className="link" href="/">Home</a>
           </li>
           <li>
-            <a href="/About">About</a>
+            <a className="link" href="/About">About</a>
           </li>
           <li>
-            <a href="/Contact">Contact</a>
+            <a className="link" href="/Contact">Contact</a>
           </li>
         </ul>
       </nav>
