@@ -1,8 +1,8 @@
-.NavigationBar {
+.navigationBar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: sticky;
     border: 1px solid gray;
     top: 0;
@@ -13,9 +13,23 @@
     margin: .2rem;
     padding: .4rem;
 
+    .logoContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .title {
+        display: flex;
+        margin-right: 1rem;
+    }
+
+
     .linkList {
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 1rem;
         margin: 0;
         padding: 0;
@@ -28,5 +42,14 @@
 
     .link:hover {
         text-decoration: underline;
+    }
+
+    .logo {
+        max-height: 2rem;
+    }
+
+    .searchfield {
+        display: flex!important;
+        align-self: center;
     }
 }

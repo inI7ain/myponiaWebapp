@@ -5,8 +5,11 @@ import "./navbar.styles.scss";
 export default function Navbar(): ReactElement {
   return (
     <>
-      <nav className="NavigationBar">
-        <img className="logo" src="/src/assets/myponia_logo.png" alt="logo" />
+      <nav className="navigationBar">
+        <div className="logoContainer">
+          <img className="logo" src="/myponia_logo.png" alt="logo" />
+          <span className="title">Myponia</span>
+        </div>
         <ul className="linkList">
           <li>
             <a className="link" href="/">Home</a>
@@ -18,9 +21,13 @@ export default function Navbar(): ReactElement {
             <a className="link" href="/Contact">Contact</a>
           </li>
           <li>
-            <Searchfield className="searchField"/>
+            <a className="link" href="/Webshop">Webshop</a>
+          </li>
+          <li>
+            <Searchfield className="searchfield"/>
           </li>
         </ul>
+        <a className="link" href="/Signin">Sign in</a>
       </nav>
     </>
   );

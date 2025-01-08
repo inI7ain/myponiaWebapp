@@ -2,3 +2,15 @@
     size: 50px 50px;
     margin-right: 1rem;
 }
+
+.searchfieldContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+  
+
+.searchfieldInput {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
