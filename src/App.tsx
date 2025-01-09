@@ -18,88 +18,9 @@ function App() {
             count is {count}
           </button>
         </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-        <div>
-          <h2>Hello there!</h2>
-          <p>General Kenobi...</p>
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
+        <div className='carousel'>
 
+        </div>
       </div>
     </>
   )
