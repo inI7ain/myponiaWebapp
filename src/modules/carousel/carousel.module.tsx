@@ -1,31 +1,33 @@
 import { ReactElement, useState } from "react";
 import "./carousel.styles.scss";
 
-interface Image {
+export interface Image {
     source: string;
     alt: string;
     dimensions?: {
-        width: number,
-        height: number
+        width: string,
+        height: string
     };
 }
 
-export default function Carousel (imgArray: Image[]): ReactElement {
+export function Carousel ({ imgArray }: any): ReactElement {
     const [currentImage, cycleCurrentImage] = useState(imgArray[0]);
     const [isCycling, toggleIsCycling] = useState(true);
 
     async function countdownAndUpdate (timerMS: number) {
+
         return new Promise<void>(resolve => {
             setTimeout(() => {
-                // figure out update logic
-                cycleCurrentImage();
-                resolve();
+                cycleCurrentImage(imgArray[imgArray.indexOf(currentImage) + 1]);
+                // resolve();
             }, timerMS);
         });
     }
 
     if (isCycling && currentImage !== imgArray[imgArray.length - 1]) {
         // return current img and increment after countdown
+        countdownAndUpdate(5000);
+        console.log("Normal cycling");
         return (
             <>
                 <div>
@@ -40,7 +42,9 @@ export default function Carousel (imgArray: Image[]): ReactElement {
         );
 
     } else if (isCycling && currentImage === imgArray[imgArray.length - 1]) {
-        // reset index to 0 after countdown and return img
+        setTimeout(() => {
+            cycleCurrentImage(imgArray[0]);
+        }, 5000);
         return (
             <>
                 <div>
@@ -55,6 +59,7 @@ export default function Carousel (imgArray: Image[]): ReactElement {
         );
     } else {
         // return current image and await cycling to restart
+        console.log("I shouldn't trigger");
         return (
             <>
                 <div className="carousel">
